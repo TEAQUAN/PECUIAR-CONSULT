@@ -59,6 +59,68 @@
             color: #b4b4b4;
             font-family: "Your-Finer-Font", sans-serif;
         }
+        .hero {
+    background-image: url("./IMG/img1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content {
+    font-size: 3rem;
+   font-weight: 600;
+   margin-bottom: 0;
+}
+
+
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .cta-button {
+        font-size: 0.9em;
+    }
+}
     </style>
   </head>
   <body>
@@ -70,7 +132,7 @@
     
     <nav class="navbar navbar-expand-lg navbar-custom">
         
-        <img src="./IMG/slie-logo.jpg" alt=""  class="img-fluid">
+        <img src="./IMG/slie-logo.jpg" alt=""  class="img-fluid" href="./index.html">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -92,7 +154,7 @@
         </div>
     </nav>
     
-    <section class="hero">
+    <!-- <section class="hero">
 
         <div class="hero-content">
         
@@ -108,7 +170,15 @@
            <a href="./AboutUs.html" class="btn">Check out our team</a>
         </div>
     
-    </section>
+    </section> -->
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Peculiar consulting</h1>
+           
+            <a href="./AboutUs.html" class="btn">Check out our team</a>
+        </div>
+    </header>
 
     <div class="container">
         <div class="section">
