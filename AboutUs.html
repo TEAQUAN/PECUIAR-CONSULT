@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/CSS/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Entypo">
+
+
+    <style>
+        body {
+             font-family: 'Entypo', sans-serif;
+        }
+        /* Add custom styles for the contact information container */
+        .contact-info-container {
+            background-color: #f7f7f7;
+            border: 2px solid #333;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .contact-info {
+            color: green; /* Set the text color to green */
+        }
+        .navbar-custom {
+            background-color: white;
+        }
+        .navbar-custom .navbar-brand {
+            color: green;
+        }
+        .navbar-custom .nav-link {
+            color: green;
+            text-decoration: none;
+            transition: border-bottom 0.2s; /* Add a smooth transition for the underline effect */
+        }
+        .navbar-custom .nav-link:hover {
+            border-bottom: 2px solid green; /* Add an underline effect on hover */
+        }
+        .hero {
+            overflow: hidden;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .section {
+            flex-basis: 45%; /* Adjust this value as needed */
+        }
+        .header {
+            color: grey; /* Text color for headers */
+        }
+        .content {
+            color: green; /* Text color for content */
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+        h2 {
+            color: #719430;
+        }
+
+        h3{
+            color: #719430;
+        }
+        p {
+            color: grey;
+           
+        }
+        h4 {
+            color: grey;
+        }
+        h1 {
+            color: #719430;
+            text-decoration: underline;
+        }
+       
+        ul {
+      list-style-type: disc; /* Set the list-style type to "disc" for bullets */
+    }
+    li {
+      color: grey; /* Set the text color for list items to #b4b4b4 */
+    }
+    .carousel-caption p {
+      color: #666666;
+    }
+    .carousel-caption h3 {
+      color: #666666;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="contact-info-container">
+        <div class="contact-info">
+            <p>Hotline: 240 461 4982 | 16509 Kilby Court, Upper Marlboro, MD 20</p>
+        </div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-custom">
+        
+        <img src="./IMG/slie-logo.jpg" alt=""  class="img-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./AboutUs.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./OurOffers.html">Our Offers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="row">
+          <!-- Image Column (col-md-6 for medium and larger screens) -->
+          
+          <div class="col-md-6">
+            <!-- Carousel -->
+          
+            <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./IMG/slie-1.png" alt="Image 1" class="img-fluid">
+                  <div class="carousel-caption">
+                  
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img src="./IMG/slie-2.png" alt="Image 2" class="img-fluid">
+                  <div class="carousel-caption">
+                  
+                   </div>
+                </div>
+               
+              </div>
+            </div>
+            
+                <div>
+                    <h3>OUR SPECIALIZATION</h3>
+               <ol>
+                <li>
+                    <i class="fas fa-dollar-sign">Tax preparation</i>
+                </li>
+                <li>
+                    <i class="fas fa-lightbulb">Buisness advisory</i>
+
+                </li>
+                <li>
+                    <i class="fas fa-book">Book keeping</i>
+
+                 </li>
+                 <li>
+                    <i class="fas fa-book">Accounting service</i>
+
+                 </li>
+                <!-- Dollar sign icon representing finance or money -->
+               </ol>
+                </div>
+
+            <div>
+                <h3>MEET THE TEAM</h3>
+                <p>We are a team of dedicated professionals, ready to do what ever it takes to make your business grow
+                    
+                </p>
+                <hr>
+                <i class="fas fa-user"></i>
+                <h4>KIKE BEJIDE</h4>
+                <P>Director</P>
+                <hr>
+                <i class="fas fa-user"></i>
+                <h4>PETER O. BEJIDE, CPA, CGMA.</h4>
+                <P>PRESIDENT</P>
+            </div>
+            <hr>
+          </div>
+      
+          <!-- Content Column (col-md-6 for medium and larger screens) -->
+          <div class="col-md-6">
+            <h3>Welcome to Peculiar Consulting</h3>
+            <p>
+              PCL was founded in 1999. The Firm provides accounting, tax, and business advisory services to a variety of clients, including Individuals and Corporate entities, including non-profit organizations, and religious institutions.
+            </p>
+            <p>
+              The President of PCL is a qualified CPA. The Firm and/or its senior staff are members of various professional organizations, including:
+            </p>
+            <ul>
+              <li>The American Institute of Certified Public Accountants (AICPA)</li>
+              <li>The National Society of Accountancy (NSA)</li>
+              <li>Chartered Global Management Accountant (CGMA)</li>
+              <li>Greater Washington Society of Certified Public Accountants</li>
+              <li>Virginia Society of Certified Public Accountants</li>
+            </ul>
+            <p>
+              The Firm has received testimonials from our clients nationwide.
+            </p>
+            <h3>Our Mission</h3>
+            <p>
+              Our mission is to help clients maintain financial viability in the present while taking a proactive approach to achieve future goals. This requires open communication to reach an understanding of our clients' needs through research and sound analysis. PCL is dedicated to meeting these goals with high standards of excellence and professionalism.
+            </p>
+            <p>
+              We believe in dedication and commitment to our clients. Whether you are a current or prospective client, rest assured that clients who choose PCL receive competent and timely service.
+            </p>
+            <h3>Our Philosophy</h3>
+            <ul>
+              <li><strong>Quality.</strong> At PCL, we are proud of our reputation for excellence. Our primary goal is to provide services of the highest quality to our clients.</li>
+              <li><strong>Timeliness.</strong> A key to client satisfaction is the ability to meet their statutory and critical deadlines. We strive to complete our engagements in sufficient time, and within the agreed deadlines, to achieve maximum impact and meet the needs of decision makers and other users.</li>
+              <li><strong>Responsiveness.</strong> PCL has effective mechanisms in place to anticipate clients' needs. We strive to respond with innovative, tailored solutions. Keeping communication channels open and listening to our clients is integral to our success.</li>
+              <li><strong>Value.</strong> Finally, PCL emphasizes affordable services. Combined with our commitment to quality, timeliness, and responsiveness, our affordable prices make us a true value in every sense of the word.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    <footer class="bg-dark text-white p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>About Us</h5>
+                    <p>PECULIAR CONSULTING LLC “We put the numbers in the right place, providing world-class expertise, sound financial advice, and consulting solutions. Accounting/Tax/Bookkeeping/Business Advisory”</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Our Offers</h5>
+                    <p>The President of Peculiar Consulting LLC is a qualified CPA. The Firm and/or its senior staff are members of various professional organizations</p>
+                </div>
+                <div class="col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
+                    <img src="./IMG/img-member.png" alt="" srcset="">
+                    <!-- <img src="./IMG/logoscc.png" alt="" srcset=""> -->
+                </div>
+            </div>
+        </div>
+        <p class="only-one" id="copyright">© Peculiar consulting llc</p>
+    </footer>
+    <a class="back-to-top" href="#top">↑</a>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('.back-to-top').fadeIn();
+                } else {
+                    $('.back-to-top').fadeOut();
+                }
+            });
+            
+            $('.back-to-top').click(function() {
+                $('html, body').animate({scrollTop : 0}, 800);
+                return false;
+            });
+        });
+    </script>
+    <script>
+        // Automatically advance the carousel every 2 seconds
+        $(document).ready(function(){
+          $('#imageCarousel').carousel({
+            interval: 2000 // Time in milliseconds (2 seconds)
+          });
+        });
+      </script>
+       <script>
+        // Get the current year
+        var currentYear = new Date().getFullYear();
+        
+        // Update the copyright notice with the current year
+        document.getElementById('copyright').textContent = "© Peculiar consulting llc " + currentYear;
+    </script>
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+   <!-- Add a script for smooth scrolling to the top of the page -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+ 
+</html>
