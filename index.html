@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Peculiar Consulting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peculiar-Consulting</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS/styles.css" />
     <script src="https://kit.fontawesome.com/e7783e5772.js" crossorigin="anonymous"></script>
@@ -11,10 +11,10 @@
         /* Add custom styles for the contact information container */
         .contact-info-container {
             background-color: #f7f7f7;
-            border: 2px solid #333;
-            padding: 10px;
+            border: 1px solid #333;
+            /* padding: 10px; */
             text-align: center;
-            margin-bottom: 20px;
+            /* margin-bottom: 20px; */
         }
         .contact-info {
             color: green; /* Set the text color to green */
@@ -25,11 +25,6 @@
         .navbar-custom .navbar-brand {
             color: green;
         }
-            .contact-info p {
-  /* Your CSS styles for all paragraphs inside the contact-info class here */
-     color: #719430;
-      font-weight: bold;
-}
         .navbar-custom .nav-link {
             color: green;
             text-decoration: none;
@@ -80,6 +75,12 @@
    font-weight: 600;
    margin-bottom: 0;
 }
+/* Add styles for the active link */
+.navbar-nav .nav-item .nav-link.active {
+    font-weight: bold;
+    color: green;
+    /* Add any other styles to highlight the active link */
+}
 
 
 
@@ -97,6 +98,142 @@
 .cta-button:hover {
     background-color: #0056b3;
 }
+.carousel-item img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .news-details {
+      text-align: left;
+      padding: 20px;
+    }
+
+    .news-title {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .news-content {
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+    /* Style for WhatsApp button */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* Adjust the button style as needed */
+.whatsapp-button img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+ .whatsapp_float {
+          position: fixed;
+          width: 60px;
+          height: 60px;
+          bottom: 40px;
+          right: 40px;
+          background-color: #25d366;
+          color: #FFF;
+          border-radius: 50px;
+          text-align: center;
+          font-size: 30px;
+          box-shadow: 2px 2px 3px #999;
+          z-index: 100;
+      }
+
+      .whatsapp-icon {
+          margin-top: 16px;
+      }
+      img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media query for medium-sized devices */
+@media (max-width: 992px) {
+    /* Adjust styles for medium-sized devices here */
+
+    /* For example, you might reduce padding or font sizes to fit better on medium screens */
+    .container {
+        padding: 20px;
+    }
+
+    /* Modify navigation styles */
+    .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    /* Rearrange sections or adjust their widths */
+    .section {
+        flex-basis: 50%; /* Change the section width for medium-sized screens */
+    }
+
+    /* Modify any other styles to optimize for medium-sized devices */
+}
+
+/* Media query for smaller devices (tablets) */
+@media (max-width: 768px) {
+    /* Adjust styles for smaller devices (tablets) here */
+
+    /* For tablets, you might reduce font sizes, adjust padding, or change the layout */
+    .container {
+        padding: 15px;
+    }
+
+    /* Modify navigation styles */
+    .navbar-nav .nav-link {
+        font-size: 13px;
+    }
+
+    /* Rearrange sections or adjust their widths */
+    .section {
+        flex-basis: 100%; /* Full width for sections on tablets */
+    }
+
+    /* Modify any other styles to optimize for tablets */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 576px) {
+    /* Adjust styles for mobile devices here */
+
+    /* For mobile devices, further reduce font sizes, adjust padding, or change the layout */
+    .container {
+        padding: 10px;
+    }
+
+    /* Modify navigation styles */
+    .navbar-nav .nav-link {
+        font-size: 12px;
+    }
+
+    /* Rearrange sections or adjust their widths */
+    .section {
+        flex-basis: 100%; /* Full width for sections on mobile devices */
+    }
+
+    /* Modify any other styles to optimize for mobile devices */
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {
@@ -111,6 +248,17 @@
     .cta-button {
         font-size: 1em;
     }
+      .whatsapp-icon {
+              margin-top: 10px;
+          }
+
+          .whatsapp_float {
+              width: 40px;
+              height: 40px;
+              bottom: 20px;
+              right: 10px;
+              font-size: 22px;
+          }
 }
 
 @media (max-width: 576px) {
@@ -126,18 +274,20 @@
         font-size: 0.9em;
     }
 }
+.contact-info p {
+  /* Your CSS styles for all paragraphs inside the contact-info class here */
+     color: #719430;
+      font-weight: bold;
+}
+
     </style>
   </head>
   <body>
-    <div class="contact-info-container">
-        <div class="contact-info">
-            <p>Hotline: 240 461 4982 | 16509 Kilby Court, Upper Marlboro, MD 20</p>
-        </div>
-    </div>
+  
     
     <nav class="navbar navbar-expand-lg navbar-custom">
         
-         <a href="./index.html">
+        <a href="./index.html">
             <img src="./IMG/slie-logo.jpg" alt=""  class="img-fluid" href="./index.html">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -146,39 +296,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
+                    <a class="nav-link" href="./index.html" id="Home-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./AboutUs.html">About Us</a>
+                    <a class="nav-link" href="./AboutUs.html" id="About-link">About Us</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./OurOffers.html">Our Offers</a>
+                    <a class="nav-link" href="./OurOffers.html" id="Offers-link">Our Offers</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./Contact.html">Contact</a>
+                    <a class="nav-link" href="./Contact.html" id="Contact-link">Contact</a>
                 </li>
             </ul>
         </div>
     </nav>
-    
-    <!-- <section class="hero">
-
-        <div class="hero-content">
-        
-           <h1 class="hero-title">
-                Pecculiar Consulting
-           </h1>
-             
-           <h2 class="hero-subtitle">
-                LLC
-           </h2>
-             
-          
-           <a href="./AboutUs.html" class="btn">Check out our team</a>
-        </div>
-    
-    </section> -->
-
     <header class="hero">
         <div class="hero-content">
             <h1>Peculiar consulting</h1>
@@ -188,26 +319,33 @@
     </header>
 
     <div class="container">
-        <div class="section">
+      <div class="row">
+        <div class="section col-sm">
             <h2 class="header">About Us</h2>
             <p class="content">Peculiar Consulting, LLC is an accounting and consulting firm serving clients since 1999 serving clients throughout the Washington DC Metropolitan area and nationwide.</p>
             <p class="content">We are dedicated to providing our clients professional, personalized services and guidance with respect to a wide range of accounting, bookkeeping, personal and corporate tax, government, financial, and business needs.</p>
             <p class="content">We welcome any questions or comments you may have. Feel free to contact us at any time:</p>
             <p class="content">Peter O. Bejide, CPA, CGMA.<br>President</p>
         </div>
-        <div class="section">
+        <hr>
+        <div class="section col-sm">
             <h2 class="header">Tax Services</h2>
             <p class="content">Tax laws are so complicated that filing a basic return can be confusing. We will find every deduction and credit you’re entitled to; because even with modern software, there’s no substitute for the assistance of an experienced Certified Public Accountant (CPA).</p>
         </div>
+        <hr>
+        </div>
     </div>
     <div class="container">
-        <div class="section">
+      <div class="row">
+        <div class="section col-sm">
             <h2 class="header">Accounting Services</h2>
             <p class="content">We give you timely and accurate financial information to help your planning and efficient operation. With us, you’re assured of well-organized financial records. We take care of your tax compliance, wealth management, wealth protection, and lots more.</p>
         </div>
-        <div class="section">
+        <hr>
+        <div class="section col-sm">
             <h2 class="header">Business Advisory</h2>
             <p class="content">At PCL, we focus on building close client relationships that add long-term value. This includes assuring the solidity of financial records, evaluating financial procedures, and working to produce strategies that help our clients face the countless challenges of business planning and execution.</p>
+        </div>
         </div>
     </div>
 
@@ -240,16 +378,67 @@
             </div>
         </div>
       </section>
+      <!-- <section class="news-section">
+        <div class="container">
+          <h2 class="header">Latest News</h2>
+          <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="./IMG/news-image1.jpg" alt="News Image 1">
+                  </div>
+                  <div class="col-md-6 news-details">
+                    <h3 class="news-title">Title of the News 1</h3>
+                    <p class="news-content">Brief description or summary of the first news article.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="./IMG/news-image2.jpg" alt="News Image 2">
+                  </div>
+                  <div class="col-md-6 news-details">
+                    <h3 class="news-title">Title of the News 2</h3>
+                    <p class="news-content">Brief description or summary of the second news article.</p>
+                    <a href="#" class="btn btn-primary">Read More</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Add more carousel items as needed -->
+            <!-- </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section> --> 
+      <a
+        href="https://wa.me/12404614982?text=Hi%20there!%20I%20need%20some%20assistance."
+        class="whatsapp_float"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <i class="fa fa-whatsapp whatsapp-icon"></i>
+      </a>
+    
       <footer class="bg-dark text-white p-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>About Us</h5>
-                    <p>PECULIAR CONSULTING LLC “We put the numbers in the right place, providing world-class expertise, sound financial advice, and consulting solutions. Accounting/Tax/Bookkeeping/Business Advisory”</p>
+                    <h5>About-Us</h5>
+                    <p>PECULIAR CONSULTING LLC “We put the numbers in the right place, providing world-class expertise, sound financial advice, and consulting solutions. Accounting/Tax/Bookkeeping/Business Advisory.</p>
                 </div>
                 <div class="col-md-3">
                     <h5>Our Offers</h5>
-                    <p>The President of Peculiar Consulting LLC is a qualified CPA. The Firm and/or its senior staff are members of various professional organizations</p>
+                    <p>The President of Peculiar Consulting LLC is a qualified CPA. The Firm and/or its senior staff are members of various professional organizations.</p>
                 </div>
                 <div class="col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
                     <img src="./IMG/img-member.png" alt="" srcset="">
@@ -260,6 +449,11 @@
         </div>
         <p class="only-one" id="copyright">© Peculiar consulting llc</p>
     </footer>
+    <div class="contact-info-container">
+      <div class="contact-info">
+          <p class="blink">Hotline: 240 461 4982 | 16509 Kilby Court, Upper Marlboro, MD 20</p>
+      </div>
+  </div>
     
 
     <!-- Back to top button -->
@@ -286,7 +480,18 @@
             });
         });
     </script>
-
+  <script>
+    window.onscroll = function() {
+  var whatsappButton = document.querySelector('.whatsapp-button');
+  
+  // Change the scroll value to set when the button becomes visible or hidden
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    whatsappButton.style.display = 'block';
+  } else {
+    whatsappButton.style.display = 'none';
+  }
+};
+  </script>
         <script>
             // Get the current year
             var currentYear = new Date().getFullYear();
@@ -294,6 +499,7 @@
             // Update the copyright notice with the current year
             document.getElementById('copyright').textContent = "© Peculiar consulting llc " + currentYear;
         </script>
+        <script src="./index.js"></script>
   </body>
  
 </html>
