@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Peculiar Consulting</title>
+    <title>About-US / Peculiar-Consulting</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Entypo">
+    <script src="https://kit.fontawesome.com/e7783e5772.js" crossorigin="anonymous"></script>
 
 
     <style>
@@ -72,6 +73,16 @@
             color: grey;
            
         }
+        .navbar-nav .nav-item .nav-link.active {
+    font-weight: bold;
+    color: green;
+    /* Add any other styles to highlight the active link */
+}
+        .contact-info p {
+  /* Your CSS styles for all paragraphs inside the contact-info class here */
+     color: #719430;
+      font-weight: bold;
+}
         h4 {
             color: grey;
         }
@@ -92,43 +103,33 @@
     .carousel-caption h3 {
       color: #666666;
     }
-            .contact-info p {
-  /* Your CSS styles for all paragraphs inside the contact-info class here */
-     color: #719430;
-      font-weight: bold;
-}
     </style>
   </head>
   <body>
-    <div class="contact-info-container">
-        <div class="contact-info">
-            <p>Hotline: 240 461 4982 | 16509 Kilby Court, Upper Marlboro, MD 20</p>
-        </div>
-    </div>
     
     <nav class="navbar navbar-expand-lg navbar-custom">
         
-         <a href="./index.html">
-            <img src="./IMG/slie-logo.jpg" alt=""  class="img-fluid" href="./index.html">
-        </a>
+      <a href="./index.html">
+        <img src="./IMG/slie-logo.jpg" alt=""  class="img-fluid" href="./index.html">
+    </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./AboutUs.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./OurOffers.html">Our Offers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Contact.html">Contact</a>
-                </li>
-            </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html" id="Home-link">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./AboutUs.html" id="About-link">About Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./OurOffers.html" id="Offers-link">Our Offers</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./Contact.html" id="Contact-link">Contact</a>
+            </li>
+        </ul>
         </div>
     </nav>
     
@@ -186,12 +187,12 @@
                 </p>
                 <hr>
                 <i class="fas fa-user"></i>
-              <h4>PETER O. BEJIDE, CPA, CGMA.</h4>
-                <P>PRESIDENT</P>
+                <h4>KIKE BEJIDE</h4>
+                <P>Director</P>
                 <hr>
                 <i class="fas fa-user"></i>
-                 <h4>KIKE BEJIDE MSC.</h4>
-                <P>Director</P>
+                <h4>PETER O. BEJIDE, CPA, CGMA.</h4>
+                <P>PRESIDENT</P>
             </div>
             <hr>
           </div>
@@ -233,16 +234,25 @@
         </div>
       </div>
       
+      <a
+      href="https://wa.me/12404614982?text=Hi%20there!%20I%20need%20some%20assistance."
+      class="whatsapp_float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fa fa-whatsapp whatsapp-icon"></i>
+    </a>
+
     <footer class="bg-dark text-white p-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h5>About Us</h5>
-                    <p>PECULIAR CONSULTING LLC “We put the numbers in the right place, providing world-class expertise, sound financial advice, and consulting solutions. Accounting/Tax/Bookkeeping/Business Advisory”</p>
+                    <h5 style="color: white;">About Us</h5>
+                    <p style="color: white;">PECULIAR CONSULTING LLC “We put the numbers in the right place, providing world-class expertise, sound financial advice, and consulting solutions. Accounting/Tax/Bookkeeping/Business Advisory”</p>
                 </div>
                 <div class="col-md-3">
-                    <h5>Our Offers</h5>
-                    <p>The President of Peculiar Consulting LLC is a qualified CPA. The Firm and/or its senior staff are members of various professional organizations</p>
+                    <h5 style="color: white;">Our Offers</h5>
+                    <p style="color: white;">The President of Peculiar Consulting LLC is a qualified CPA. The Firm and/or its senior staff are members of various professional organizations</p>
                 </div>
                 <div class="col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
                     <img src="./IMG/img-member.png" alt="" srcset="">
@@ -250,8 +260,13 @@
                 </div>
             </div>
         </div>
-        <p class="only-one" id="copyright">© Peculiar consulting llc</p>
+        <p style="color: white;" class="only-one" id="copyright">© Peculiar consulting llc</p>
     </footer>
+       <div class="contact-info-container">
+        <div class="contact-info">
+            <p class="blink">Hotline: 240 461 4982 | 16509 Kilby Court, Upper Marlboro, MD 20</p>
+        </div>
+    </div>
     <a class="back-to-top" href="#top">↑</a>
     <script>
         $(document).ready(function() {
@@ -288,6 +303,19 @@
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
    <!-- Add a script for smooth scrolling to the top of the page -->
    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+   <script src="./index.js"></script>
+   <script>
+    window.onscroll = function() {
+  var whatsappButton = document.querySelector('.whatsapp-button');
+  
+  // Change the scroll value to set when the button becomes visible or hidden
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    whatsappButton.style.display = 'block';
+  } else {
+    whatsappButton.style.display = 'none';
+  }
+};
+</script>
   </body>
  
 </html>
