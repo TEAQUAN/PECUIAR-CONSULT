@@ -6,7 +6,13 @@
     <title>Peculiar Consulting</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/CSS/styles.css" />
+    <script src="https://kit.fontawesome.com/e7783e5772.js" crossorigin="anonymous"></script>
     <style>
+      .navbar-nav .nav-item .nav-link.active {
+    font-weight: bold;
+    color: green;
+    /* Add any other styles to highlight the active link */
+}
         /* Add custom styles for the contact information container */
         .contact-info-container {
             background-color: #f7f7f7;
@@ -65,7 +71,6 @@
 
         p {
             color: grey;
-            font-weight: bold;
             display: inline-block;
             margin-right: 10px;
         }
@@ -118,54 +123,119 @@
             border-radius: 5px;
             cursor: pointer;
         }
+        .bg-image {
+  background-image: url('./IMG//ee75bb992c3ac3d67e9704fdbade9298.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
     </style>
   </head>
   <body>
-    <div class="contact-info-container">
-        <div class="contact-info">
-            <p>Hotline: 240 461 4982 | 16509 Kilby Court, Upper Marlboro, MD 20</p>
-        </div>
-    </div>
+ 
     
     <nav class="navbar navbar-expand-lg navbar-custom">
         
- <a href="./index.html">
-            <img src="./IMG/slie-logo.jpg" alt=""  class="img-fluid" href="./index.html">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./AboutUs.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./OurOffers.html">Our Offers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Contact.html">Contact</a>
-                </li>
-            </ul>
+      <a href="./index.html">
+          <img src="./IMG/slie-logo.jpg" alt=""  class="img-fluid" href="./index.html">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                  <a class="nav-link" href="./index.html" id="Home-link">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./AboutUs.html" id="About-link">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./OurOffers.html" id="Offers-link">Our Offers</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="./Contact.html" id="Contact-link">Contact</a>
+              </li>
+          </ul>
+      </div>
+  </nav>
+
+<!--Section: Contact v.2-->
+<div class="container-fluid px-5 my-5">
+  <div class="row justify-content-center">
+    <div class="col-xl-10">
+      <div class="card border-0 rounded-3 shadow-lg overflow-hidden">
+        <div class="card-body p-0">
+          <div class="row g-0">
+            <div class="col-sm-6 d-none d-sm-block bg-image"></div>
+            <div class="col-sm-6 p-4">
+              <div class="text-center">
+                <div class="h3 fw-light">Contact US!</div>
+                <p class="mb-4 text-muted"></p>
+              </div>
+
+              <!-- * * * * * * * * * * * * * *
+          // * * SB Forms Contact Form * *
+          // * * * * * * * * * * * * * * *
+
+          // This form is pre-integrated with SB Forms.
+          // To make this form functional, sign up at
+          // https://startbootstrap.com/solution/contact-forms
+          // to get an API token!
+          -->
+
+              <form action="mailto:admin@peculiarconsulting.com" enctype="text/plain" method="post" id="contactForm" data-sb-form-api-token="API_TOKEN" >
+
+                <!-- Name Input -->
+                <!-- <div class="form mb-3">
+                  <p>Your Name:</p>
+                  <input class="form-control" id="name" type="text" placeholder="Name" data-sb-validations="required" />
+                 
+                  <label for="name"> </label>
+                  <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
+                </div> -->
+
+                <!-- Email Input -->
+                <div class="form mb-3">
+                  <p>Our email:</p>
+                  <input class="form-control" id="emailAddress" value="admin@peculiarconsulting.com" type="email" placeholder="Email Address" data-sb-validations="required,email" readonly />
+                  <label for="emailAddress"></label>
+                  <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                  <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                </div>
+
+                <!-- Message Input -->
+                <!-- <div class="form-floating mb-3">
+                  <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;" data-sb-validations="required"></textarea>
+                  <label for="message">Message</label>
+                  <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                </div> -->
+
+
+                <!-- Submit error message -->
+                <div class="d-none" id="submitErrorMessage">
+                  <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+
+                <!-- Submit button -->
+                <div class="d-grid">
+                  <button class="btn btn-success btn-lg " id="" type="submit">Submit</button>
+                </div>
+              </form>
+              <!-- End of contact form -->
+
+            </div>
+          </div>
+
         </div>
-    </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Section: Contact v.2-->
 
 
-
-     <h1>Visit Us</h1>
-    <h2>Address</h2>
-    <p>16509 Kilby Court, Upper Marlboro, MD 20774</p>
-
-    <h2>Phone</h2>
-    <p>240 461 4982</p>
-
-    <h2>Email</h2>
-    <p>admin@peculiarconsulting.com</p>
-
-    <form  action="Tobiadekunle73@gmail.com" method="post" enctype="text/plain">
+    <!-- <form  action="Tobiadekunle73@gmail.com" method="post" enctype="text/plain">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required>
 
@@ -176,18 +246,25 @@
         <textarea id="message" name="message" rows="5" required></textarea>
 
         <input type="submit" value="Submit">
-    </form>
-   
+    </form> -->
+    <a
+    href="https://wa.me/12404614982?text=Hi%20there!%20I%20need%20some%20assistance."
+    class="whatsapp_float"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i class="fa fa-whatsapp whatsapp-icon"></i>
+  </a>
     <footer class="bg-dark text-white p-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
                     <h5>About Us</h5>
-                    <p>PECULIAR CONSULTING LLC “We put the numbers in the right place, providing world-class expertise, sound financial advice, and consulting solutions. Accounting/Tax/Bookkeeping/Business Advisory”</p>
+                    <p style="color: white;">PECULIAR CONSULTING LLC “We put the numbers in the right place, providing world-class expertise, sound financial advice, and consulting solutions. Accounting/Tax/Bookkeeping/Business Advisory”</p>
                 </div>
                 <div class="col-md-3">
                     <h5>Our Offers</h5>
-                    <p>The President of Peculiar Consulting LLC is a qualified CPA. The Firm and/or its senior staff are members of various professional organizations</p>
+                    <p style="color: white;">The President of Peculiar Consulting LLC is a qualified CPA. The Firm and/or its senior staff are members of various professional organizations</p>
                 </div>
                 <div class="col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
                     <img src="./IMG/img-member.png" alt="" srcset="">
@@ -196,8 +273,13 @@
                
             </div>
         </div>
-        <p class="only-one" id="copyright">© Peculiar consulting llc</p>
+        <p style="color: white;"  class="only-one" id="copyright">© Peculiar consulting llc</p>
     </footer>
+    <div class="contact-info-container">
+      <div class="contact-info">
+          <p class="blink">Hotline: 240 461 4982 | 16509 Kilby Court, Upper Marlboro, MD 20</p>
+      </div>
+  </div>
     <a class="back-to-top" href="#top">↑</a>
     <script>
         $(document).ready(function() {
@@ -215,6 +297,8 @@
             });
         });
     </script>
+    
+    <script src="./index.js"></script>
          <script>
             // Get the current year
             var currentYear = new Date().getFullYear();
@@ -226,6 +310,20 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
       <!-- Add a script for smooth scrolling to the top of the page -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+      <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+      <script>
+        window.onscroll = function() {
+      var whatsappButton = document.querySelector('.whatsapp-button');
+      
+      // Change the scroll value to set when the button becomes visible or hidden
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        whatsappButton.style.display = 'block';
+      } else {
+        whatsappButton.style.display = 'none';
+      }
+    };
+    </script>
   </body>
  
 </html>
