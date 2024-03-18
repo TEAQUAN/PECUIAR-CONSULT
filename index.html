@@ -1,136 +1,49 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Peculiar-Consulting</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/CSS/styles.css" />
-    <script src="https://kit.fontawesome.com/e7783e5772.js" crossorigin="anonymous"></script>
-    <style>
-        /* Add custom styles for the contact information container */
-        .contact-info-container {
-            background-color: #f7f7f7;
-            border: 1px solid #333;
-            /* padding: 10px; */
-            text-align: center;
-            /* margin-bottom: 20px; */
-        }
-        .contact-info {
-            color: green; /* Set the text color to green */
-        }
-        .navbar-custom {
-            background-color: white;
-        }
-        .navbar-custom .navbar-brand {
-            color: green;
-        }
-        .navbar-custom .nav-link {
-            color: green;
-            text-decoration: none;
-            transition: border-bottom 0.2s; /* Add a smooth transition for the underline effect */
-        }
-        .navbar-custom .nav-link:hover {
-            border-bottom: 2px solid green; /* Add an underline effect on hover */
-        }
-        .hero {
-            overflow: hidden;
-        }
-        .container {
-            display: flex;
-            justify-content: space-between;
-        }
-        .section {
-            flex-basis: 45%; /* Adjust this value as needed */
-        }
-        .header {
-            color: grey; /* Text color for headers */
-        }
-        .content {
-            color: green; /* Text color for content */
-        }
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            display: none;
-        }
-        .paragraph {
-            color: #b4b4b4;
-            font-family: "Your-Finer-Font", sans-serif;
-        }
-        .hero {
-    background-image: url("./IMG/img1.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #fff;
-}
 
-.hero-content {
-    font-size: 3rem;
-   font-weight: 600;
-   margin-bottom: 0;
-}
-/* Add styles for the active link */
-.navbar-nav .nav-item .nav-link.active {
-    font-weight: bold;
-    color: green;
-    /* Add any other styles to highlight the active link */
-}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <!-- 
+    - primary meta tags
+  -->
+  <title>PeculiarConsulting</title>
+  <meta name="title" content="Adex">
+  <meta name="description" content="This is a business agency html template made by codewithsadee">
+  <script src="https://kit.fontawesome.com/e7783e5772.js" crossorigin="anonymous"></script>
+  
+  <!-- 
+    - favicon
+  -->
+  <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
 
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-.cta-button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #007BFF;
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2em;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/slide-2.png">
+  <link rel="preload" as="image" href="./assets/images/slide-3.png">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
 
-.cta-button:hover {
-    background-color: #0056b3;
-}
-.carousel-item img {
-      max-width: 100%;
-      height: auto;
-    }
-
-    .news-details {
-      text-align: left;
-      padding: 20px;
-    }
-
-    .news-title {
-      color: #333;
-      margin-bottom: 10px;
-    }
-
-    .news-content {
-      color: #666;
-      margin-bottom: 20px;
-    }
-
-    .btn-primary {
-      background-color: #007bff;
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 16px;
-      border-radius: 5px;
-      transition: background-color 0.3s;
-    }
-
-    .btn-primary:hover {
-      background-color: #0056b3;
-    }
-    /* Style for WhatsApp button */
+  <style>
+     /* Style for WhatsApp button */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
@@ -164,342 +77,620 @@
       .whatsapp-icon {
           margin-top: 16px;
       }
-      img {
-  max-width: 100%;
-  height: auto;
-}
+  </style>
 
-/* Media query for medium-sized devices */
-@media (max-width: 992px) {
-    /* Adjust styles for medium-sized devices here */
+</head>
 
-    /* For example, you might reduce padding or font sizes to fit better on medium screens */
-    .container {
-        padding: 20px;
-    }
+<body>
 
-    /* Modify navigation styles */
-    .navbar-nav .nav-link {
-        font-size: 14px;
-    }
+  <!-- 
+    - #HEADER
+  -->
 
-    /* Rearrange sections or adjust their widths */
-    .section {
-        flex-basis: 50%; /* Change the section width for medium-sized screens */
-    }
-
-    /* Modify any other styles to optimize for medium-sized devices */
-}
-
-/* Media query for smaller devices (tablets) */
-@media (max-width: 768px) {
-    /* Adjust styles for smaller devices (tablets) here */
-
-    /* For tablets, you might reduce font sizes, adjust padding, or change the layout */
-    .container {
-        padding: 15px;
-    }
-
-    /* Modify navigation styles */
-    .navbar-nav .nav-link {
-        font-size: 13px;
-    }
-
-    /* Rearrange sections or adjust their widths */
-    .section {
-        flex-basis: 100%; /* Full width for sections on tablets */
-    }
-
-    /* Modify any other styles to optimize for tablets */
-}
-
-/* Media query for mobile devices */
-@media (max-width: 576px) {
-    /* Adjust styles for mobile devices here */
-
-    /* For mobile devices, further reduce font sizes, adjust padding, or change the layout */
-    .container {
-        padding: 10px;
-    }
-
-    /* Modify navigation styles */
-    .navbar-nav .nav-link {
-        font-size: 12px;
-    }
-
-    /* Rearrange sections or adjust their widths */
-    .section {
-        flex-basis: 100%; /* Full width for sections on mobile devices */
-    }
-
-    /* Modify any other styles to optimize for mobile devices */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2em;
-    }
-
-    p {
-        font-size: 1.2em;
-    }
-
-    .cta-button {
-        font-size: 1em;
-    }
-      .whatsapp-icon {
-              margin-top: 10px;
-          }
-
-          .whatsapp_float {
-              width: 40px;
-              height: 40px;
-              bottom: 20px;
-              right: 10px;
-              font-size: 22px;
-          }
-}
-
-@media (max-width: 576px) {
-    h1 {
-        font-size: 1.5em;
-    }
-
-    p {
-        font-size: 1em;
-    }
-
-    .cta-button {
-        font-size: 0.9em;
-    }
-}
-.contact-info p {
-  /* Your CSS styles for all paragraphs inside the contact-info class here */
-     color: #719430;
-      font-weight: bold;
-}
-
-    </style>
-  </head>
-  <body>
-  
-    
-    <nav class="navbar navbar-expand-lg navbar-custom">
-        
-        <a href="./index.html">
-            <img src="./IMG/slie-logo.jpg" alt=""  class="img-fluid" href="./index.html">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="./index.html" id="Home-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./AboutUs.html" id="About-link">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./OurOffers.html" id="Offers-link">Our Offers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./Contact.html" id="Contact-link">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Peculiar consulting</h1>
-           
-            <a href="./AboutUs.html" class="btn">Check out our team</a>
-        </div>
-    </header>
-
+  <header class="header" data-header>
     <div class="container">
-      <div class="row">
-        <div class="section col-sm">
-            <h2 class="header">About Us</h2>
-            <p class="content">Peculiar Consulting, LLC is an accounting and consulting firm serving clients since 1999 serving clients throughout the Washington DC Metropolitan area and nationwide.</p>
-            <p class="content">We are dedicated to providing our clients professional, personalized services and guidance with respect to a wide range of accounting, bookkeeping, personal and corporate tax, government, financial, and business needs.</p>
-            <p class="content">We welcome any questions or comments you may have. Feel free to contact us at any time:</p>
-            <p class="content">Peter O. Bejide, CPA, CGMA.<br>President</p>
-        </div>
-        <hr>
-        <div class="section col-sm">
-            <h2 class="header">Tax Services</h2>
-            <p class="content">Tax laws are so complicated that filing a basic return can be confusing. We will find every deduction and credit you’re entitled to; because even with modern software, there’s no substitute for the assistance of an experienced Certified Public Accountant (CPA).</p>
-        </div>
-        <hr>
-        </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="section col-sm">
-            <h2 class="header">Accounting Services</h2>
-            <p class="content">We give you timely and accurate financial information to help your planning and efficient operation. With us, you’re assured of well-organized financial records. We take care of your tax compliance, wealth management, wealth protection, and lots more.</p>
-        </div>
-        <hr>
-        <div class="section col-sm">
-            <h2 class="header">Business Advisory</h2>
-            <p class="content">At PCL, we focus on building close client relationships that add long-term value. This includes assuring the solidity of financial records, evaluating financial procedures, and working to produce strategies that help our clients face the countless challenges of business planning and execution.</p>
-        </div>
-        </div>
-    </div>
 
-    <section id="what" class="bg-light py-1">
+      <a href="#" class="logo">
+        <!-- <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home" class="logo-light"> -->
+
+     <h1>PeculiarConsulting</h1>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+           <h1>PeculiarConsulting</h1>
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="./index.html" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="./aboutus.html" class="navbar-link">About Us</a>
+          </li>
+
+          <li>
+            <a href="./OurOffers.html" class="navbar-link">Our Offers</a>
+          </li>
+
+          <!-- <li>
+            <a href="#" class="navbar-link">Blog</a>
+          </li> -->
+
+          <li>
+            <a href="./Contact.html" class="navbar-link">Contact</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:admin@peculiarconsulting.com" class="contact-link">admin@peculiarconsulting.com</a>
+
+          <a href="tel:001234567890" class="contact-link">Hotline: 240 461 4982</a>
+        </div>
+
+        <!-- <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul> -->
+
+      </nav>
+
+      <!-- <a href="#" class="btn btn-primary">Free Trial</a> -->
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <a
+  href="https://wa.me/12404614982?text=Hi%20there!%20I%20need%20some%20assistance."
+  class="whatsapp_float"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <i class="fa fa-whatsapp whatsapp-icon"></i>
+</a>
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
         <div class="container">
-          <!-- <h2 class="m-heading text-center"><span class="text-primary">What</span> 
-            We Do</h2> -->
-            <div class="items">
-              <div class="item">
-                <i class="fas fa-university fa-2x"></i>
-                <div>
-                  <h3>Quick service delievery</h3>
-                  <p>We give you the best service without wasting time using State-of-the-art technology and seasoned experts. When you need a fast and effective accounting service, we are your best choice.</p>
-                </div>
-              </div>
-              <div class="item">
-                <i class="fas fa-book-reader fa-2x"></i>
-                <div>
-                  <h3>Excellent customer service</h3>
-                  <p>We stand as your success partner making sure you are carried along and given maximum support and attention from the start to the finish..</p>
-                  </div>
-              </div>
-              <div class="item">
-                <i class="fas fa-pencil-alt fa-2x"></i>
-                <div>
-                  <h3>Essential tools</h3>
-                  <p>We provide you tools such as financial calculators, tax year checklists, news and links to other useful sites. PCL has over 15 years of valuable experience assisting clients.</p>
-                </div>
-              </div>
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">For accurate and reliable accounting services.</h1>
+
+            <p class="hero-text">
+              We are a creative company that focuses on establishing long-term relationships with customers.
+            </p>
+
+            <div class="btn-wrapper">
+
+
+              <a href="./Contact.html" class="btn btn-outline">Contact Us</a>
+
             </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/slide-3.png"" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/slie-1.png" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                    <button class="play-btn" aria-label="play adex intro">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
         </div>
       </section>
-      <!-- <section class="news-section">
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-labelledby="service-label">
         <div class="container">
-          <h2 class="header">Latest News</h2>
-          <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="./IMG/news-image1.jpg" alt="News Image 1">
-                  </div>
-                  <div class="col-md-6 news-details">
-                    <h3 class="news-title">Title of the News 1</h3>
-                    <p class="news-content">Brief description or summary of the first news article.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                  </div>
+
+          <p class="section-subtitle" id="service-label">What We Do?</p>
+
+          <h2 class="h2 section-title">
+            The service we offer is specifically designed to meet your needs.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
                 </div>
+
+                <h3 class="h4 card-title">24/7 Support</h3>
+
+                <p class="card-text">
+                 We offer 24hr support to any of your accounting demands.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <!-- <span class="span">Learn More</span> -->
+
+                  <!-- <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon> -->
+                </a>
+
               </div>
-              <div class="carousel-item">
-                <div class="row">
-                  <div class="col-md-6">
-                    <img src="./IMG/news-image2.jpg" alt="News Image 2">
-                  </div>
-                  <div class="col-md-6 news-details">
-                    <h3 class="news-title">Title of the News 2</h3>
-                    <p class="news-content">Brief description or summary of the second news article.</p>
-                    <a href="#" class="btn btn-primary">Read More</a>
-                  </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
                 </div>
+
+                <h3 class="h4 card-title">Quick service delievery</h3>
+
+                <p class="card-text">
+                  We give you the best service without wasting time using State-of-the-art technology and seasoned experts. When you need a fast and effective accounting service, we are your best choice.
+                </p>
+
+                <a href="#" class="btn-text">
+                 
+                </a>
+
               </div>
-              <!-- Add more carousel items as needed -->
-            <!-- </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Excellent customer service</h3>
+
+                <p class="card-text">
+                  We stand as your success partner making sure you are carried along and given maximum support and attention from the start to the finish.
+                </p>
+
+                <!-- <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Essential tools</h3>
+
+                <p class="card-text">
+                  We provide you tools such as financial calculators, tax year checklists, news and links to other useful sites. PCL has over 15 years of valuable experience assisting clients.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">Why Choose Us?</p>
+
+            <h2 class="h2 section-title">
+              We bring solutions to make life easier for our clients.
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Accounting Services for big and Small Business</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    From individuals looking for accurate and reliable accounting services, business owners who will love to have proper accounting records for performance analysis and tax, to big organizations, we have competent hands to deliver excellent results
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Top-Notch Support</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    At Peculiar Consulting, our commitment to customer satisfaction goes beyond the ordinary – we take pride in providing top-notch support that sets us apart in the industry. Our unwavering dedication to delivering an exceptional customer experience is rooted in several key principles that define our approach.
+                
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Tailor Made Accounting </spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Are you required to generate periodic accounting reports? Do you need professional hands to take care of your accounting records?
+                    At Peculiar Consulting, we offer tailor-made services to suit your needs. We analyze what you do and the necessary compliance aspects to it, then we provide the ideal service that is meant just for your needs.
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
           </div>
+
         </div>
-      </section> --> 
-      <a
-        href="https://wa.me/12404614982?text=Hi%20there!%20I%20need%20some%20assistance."
-        class="whatsapp_float"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <i class="fa fa-whatsapp whatsapp-icon"></i>
-      </a>
-    
-      <footer class="bg-dark text-white p-4">
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h5>About-Us</h5>
-                    <p>PECULIAR CONSULTING LLC “We put the numbers in the right place, providing world-class expertise, sound financial advice, and consulting solutions. Accounting/Tax/Bookkeeping/Business Advisory.</p>
+
+          <figure class="feature-banner">
+            <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">Our Offers</p>
+
+            <h2 class="h2 section-title">
+              From individuals looking for accurate and reliable accounting services, business owners who will love to have proper accounting records for performance analysis and tax, to big organizations, we have competent hands to deliver excellent results.
+            </h2>
+
+            <p class="section-text">
+              Apart from tax preparations and the consulting services we offer to businesses and individuals, our business advisory service is one of the things you need to take your business to the next level.
+            </p>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Tailor Made Accounting Services
+                  </span>
+
                 </div>
-                <div class="col-md-3">
-                    <h5>Our Offers</h5>
-                    <p>The President of Peculiar Consulting LLC is a qualified CPA. The Firm and/or its senior staff are members of various professional organizations.</p>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Accounting Services for big and Small Business
+                  </span>
+
                 </div>
-                <div class="col-md-3" style="margin-top: 10px; margin-bottom: 10px;">
-                    <img src="./IMG/img-member.png" alt="" srcset="">
-                    <!-- <img src="./IMG/logoscc.png" alt="" srcset=""> -->
-                </div>
-            </div>
-           
+              </li>
+
+            </ul>
+
+          </div>
+
         </div>
-        <p class="only-one" id="copyright">© Peculiar consulting llc</p>
-    </footer>
-    <div class="contact-info-container">
-      <div class="contact-info">
-          <p class="blink">Hotline: 240 461 4982 | 16509 Kilby Court, Upper Marlboro, MD 20</p>
-      </div>
-  </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+   
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
     
 
-    <!-- Back to top button -->
-    <a class="back-to-top" href="#top">↑</a>
 
-    <!-- Add Bootstrap and other necessary JavaScript scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
-    <!-- Add a script for smooth scrolling to the top of the page -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-        $(document).ready(function() {
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 100) {
-                    $('.back-to-top').fadeIn();
-                } else {
-                    $('.back-to-top').fadeOut();
-                }
-            });
-            
-            $('.back-to-top').click(function() {
-                $('html, body').animate({scrollTop : 0}, 800);
-                return false;
-            });
-        });
-    </script>
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Join our community by using our services and grow your business.
+          </h2>
+
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          <h2>PeculiarConsulting</h2>
+        </a>
+
+        <p id="copyright" class="footer-text">
+          <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            16509 Kilby Ct, Upper Marlboro, MD 20774
+          </address>
+        </li>
+
+        <li>
+          <a href="admin@peculiarconsulting.com" class="footer-link">admin@peculiarconsulting.com</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link"> Hotline: 240 461 4982 </a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="./aboutus.html" class="footer-link">About Us</a>
+        </li>
+
+      </ul>
+
+
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   <script>
-    window.onscroll = function() {
-  var whatsappButton = document.querySelector('.whatsapp-button');
-  
-  // Change the scroll value to set when the button becomes visible or hidden
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    whatsappButton.style.display = 'block';
-  } else {
-    whatsappButton.style.display = 'none';
-  }
-};
-  </script>
-        <script>
-            // Get the current year
-            var currentYear = new Date().getFullYear();
-            
-            // Update the copyright notice with the current year
-            document.getElementById('copyright').textContent = "© Peculiar consulting llc " + currentYear;
-        </script>
-        <script src="./index.js"></script>
-  </body>
- 
+    document.getElementById('copyright').textContent = "© Peculiar Consulting LLC " + new Date().getFullYear();
+</script>
+
+</body>
+
 </html>
